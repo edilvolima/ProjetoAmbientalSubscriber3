@@ -18,6 +18,13 @@ public class SecretariaSaude extends javax.swing.JFrame {
     public SecretariaSaude() {
         initComponents();
     }
+    
+    
+    
+    public void exibirInformacao(String informacao) {
+        
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
