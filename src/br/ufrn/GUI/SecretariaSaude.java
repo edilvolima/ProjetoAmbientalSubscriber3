@@ -31,73 +31,73 @@ public class SecretariaSaude extends javax.swing.JFrame {
         //===temperatureMonitor
         if (valores[1].equals("temperatureMonitor")) {
             if (valores[0].equals(Integer.toString(1))) {
-                if (Float.parseFloat(valores[2]) <= 10) {
+                if (Integer.parseInt(valores[2]) <= 10) {
                     labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                     labelTempA1.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 10 && Float.parseFloat(valores[2]) <= 20) {
+                } else if (Integer.parseInt(valores[2]) > 10 && Integer.parseInt(valores[2]) <= 20) {
                     labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                     labelTempA1.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 20 && Float.parseFloat(valores[2]) <= 30) {
+                } else if (Integer.parseInt(valores[2]) > 20 && Integer.parseInt(valores[2]) <= 30) {
                     labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                     labelTempA1.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 30 && Float.parseFloat(valores[2]) <= 40) {
+                } else if (Integer.parseInt(valores[2]) > 30 && Integer.parseInt(valores[2]) <= 40) {
                     labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                     labelTempA1.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 40) {
+                } else if (Integer.parseInt(valores[2]) > 40) {
                     labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                     labelTempA1.setText("" + valores[2]);
                 }
             }
             if (valores[0].equals(Integer.toString(2))) {
-                if (Float.parseFloat(valores[2]) <= 10) {
+                if (Integer.parseInt(valores[2]) <= 10) {
                     labelTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                     labelTempA2.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 10 && Float.parseFloat(valores[2]) <= 20) {
+                } else if (Integer.parseInt(valores[2]) > 10 && Integer.parseInt(valores[2]) <= 20) {
                     labelTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                     labelTempA2.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 20 && Float.parseFloat(valores[2]) <= 30) {
+                } else if (Integer.parseInt(valores[2]) > 20 && Integer.parseInt(valores[2]) <= 30) {
                     labelTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                     labelTempA2.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 30 && Float.parseFloat(valores[2]) <= 40) {
+                } else if (Integer.parseInt(valores[2]) > 30 && Integer.parseInt(valores[2]) <= 40) {
                     labelTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                     labelTempA2.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 40) {
+                } else if (Integer.parseInt(valores[2]) > 40) {
                     labelTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                     labelTempA2.setText("" + valores[2]);
                 }
             }
             if (valores[0].equals(Integer.toString(3))) {
-                if (Float.parseFloat(valores[2]) <= 10) {
+                if (Integer.parseInt(valores[2]) <= 10) {
                     labelTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                     labelTempA3.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 10 && Float.parseFloat(valores[2]) <= 20) {
+                } else if (Integer.parseInt(valores[2]) > 10 && Integer.parseInt(valores[2]) <= 20) {
                     labelTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                     labelTempA3.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 20 && Float.parseFloat(valores[2]) <= 30) {
+                } else if (Integer.parseInt(valores[2]) > 20 && Integer.parseInt(valores[2]) <= 30) {
                     labelTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                     labelTempA3.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 30 && Float.parseFloat(valores[2]) <= 40) {
+                } else if (Integer.parseInt(valores[2]) > 30 && Integer.parseInt(valores[2]) <= 40) {
                     labelTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                     labelTempA3.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 40) {
+                } else if (Integer.parseInt(valores[2]) > 40) {
                     labelTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                     labelTempA3.setText("" + valores[2]);
                 }
             }
             if (valores[0].equals(Integer.toString(4))) {
-                if (Float.parseFloat(valores[2]) <= 10) {
+                if (Integer.parseInt(valores[2]) <= 10) {
                     labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                     labelTempA4.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 10 && Float.parseFloat(valores[2]) <= 20) {
+                } else if (Integer.parseInt(valores[2]) > 10 && Integer.parseInt(valores[2]) <= 20) {
                     labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                     labelTempA4.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 20 && Float.parseFloat(valores[2]) <= 30) {
+                } else if (Integer.parseInt(valores[2]) > 20 && Integer.parseInt(valores[2]) <= 30) {
                     labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                     labelTempA4.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 30 && Float.parseFloat(valores[2]) <= 40) {
+                } else if (Integer.parseInt(valores[2]) > 30 && Integer.parseInt(valores[2]) <= 40) {
                     labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                     labelTempA4.setText("" + valores[2]);
-                } else if (Float.parseFloat(valores[2]) > 40) {
+                } else if (Integer.parseInt(valores[2]) > 40) {
                     labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                     labelTempA4.setText("" + valores[2]);
                 }
@@ -176,24 +176,16 @@ public class SecretariaSaude extends javax.swing.JFrame {
             }
             else if (valores[2].equals("HOTDRY_OFF")){
                 if (valores[0].equals(Integer.toString(1))) {
-                    labelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
-                    jTextArea1.setText("" + Texto);
+                    labelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
                 if (valores[0].equals(Integer.toString(2))) {
-                    labelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
-                    jTextArea1.setText("" + Texto);
+                    labelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
                 if (valores[0].equals(Integer.toString(3))) {
-                    labelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
-                    jTextArea1.setText("" + Texto);
+                    labelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
                 if (valores[0].equals(Integer.toString(4))) {
-                    labelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
-                    jTextArea1.setText("" + Texto);
+                    labelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
             }
         }
