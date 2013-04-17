@@ -12,10 +12,10 @@ import java.awt.Color;
  */
 public class SecretariaSaude extends javax.swing.JFrame {
 
-    /**
-     * Creates new form SecretariaMeioAmbiente
-     */
-    private AtualizaSubscriber conexao = new AtualizaSubscriber(null);
+    private AtualizaSubscriber subscriberTemperature;
+    private AtualizaSubscriber subscriberBeautifulWeather;
+    private AtualizaSubscriber subscriberHotDry;
+    
     private String Texto;
 
     public SecretariaSaude() {
@@ -436,14 +436,26 @@ public class SecretariaSaude extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if (jButton1.getText() == "OFF") {
-            conexao.subscribe();
-            jButton1.setText("ON");
+        if (jButton1.getText().equals("Desconectado")) {
+            
+            subscriberTemperature = new AtualizaSubscriber(AtualizaSubscriber.TEMPERATURE, this);
+            subscriberBeautifulWeather = new AtualizaSubscriber(AtualizaSubscriber.BEAUTIFUL_WEATHER, this);
+            subscriberHotDry = new AtualizaSubscriber(AtualizaSubscriber.HOT_DRY, this);
+            
+            subscriberTemperature.subscribe();
+            subscriberBeautifulWeather.subscribe();
+            subscriberHotDry.subscribe();
+            
+            jButton1.setText("Conectado");
             jButton1.setBackground(Color.GREEN);
             jButton1.setForeground(Color.RED);
             jLabel2.setText("Clique para se desconectar do Hub");
         } else {
-            conexao.unsubscribe();
+            
+            subscriberTemperature.unsubscribe();
+            subscriberBeautifulWeather.unsubscribe();
+            subscriberHotDry.unsubscribe();
+            
             labelRuimA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
             labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
             labelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
@@ -456,7 +468,7 @@ public class SecretariaSaude extends javax.swing.JFrame {
             labelRuimA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
             labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
             labelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
-            jButton1.setText("OFF");
+            jButton1.setText("Desconectado");
             jButton1.setBackground(Color.RED);
             jButton1.setForeground(Color.GREEN);
             jLabel2.setText("Clique para se conectar ao Hub");
