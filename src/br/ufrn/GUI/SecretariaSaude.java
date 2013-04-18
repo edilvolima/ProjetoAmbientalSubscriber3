@@ -16,7 +16,7 @@ public class SecretariaSaude extends javax.swing.JFrame {
     private AtualizaSubscriber subscriberBeautifulWeather;
     private AtualizaSubscriber subscriberHotDry;
     
-    private String Texto;
+    private String Texto = "";
 
     public SecretariaSaude() {
         initComponents();
@@ -104,47 +104,43 @@ public class SecretariaSaude extends javax.swing.JFrame {
             }
         } 
         //===beautifulWeather
-        else if (valores[1].equals("beautifulWeather")) {
+        else if (valores[1].equals("beautifulWeatherMonitor")) {
             if (valores[2].equals("BEAUTIFUL_ON")) {
                 if (valores[0].equals(Integer.toString(1))) {
-                    labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                    Texto = Texto + "Tempo Bom na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(2))) {
-                    labelTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                    Texto = Texto + "Tempo Bom na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(3))) {
-                    labelTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                    Texto = Texto + "Tempo Bom na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(4))) {
-                    labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                    Texto = Texto + "Tempo Bom na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
             }else if (valores[2].equals("BEAUTIFUL_OFF")) {
                 if (valores[0].equals(Integer.toString(1))) {
-                    labelTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(2))) {
-                    labelTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(3))) {
-                    labelTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(4))) {
-                    labelTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-                    Texto = Texto + "Tempo Bom na área " + valores[0];
+                    labelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
                     jTextArea1.setText("" + Texto);
                 }
             }
@@ -154,38 +150,38 @@ public class SecretariaSaude extends javax.swing.JFrame {
         else if (valores[1].equals("hotDryMonitor")) {            
             if(valores[2].equals("HOTDRY_ON")){
                 if (valores[0].equals(Integer.toString(1))) {
-                    labelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
+                    labelRuimA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                    Texto = Texto + "Tempo quente e seco na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(2))) {
-                    labelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
+                    labelRuimA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                    Texto = Texto + "Tempo quente e seco na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(3))) {
-                    labelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
+                    labelRuimA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                    Texto = Texto + "Tempo quente e seco na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
                 if (valores[0].equals(Integer.toString(4))) {
-                    labelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-                    Texto = Texto + "Tempo quente e seco na área " + valores[0];
+                    labelRuimA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                    Texto = Texto + "Tempo quente e seco na área " + valores[0] + "\n";
                     jTextArea1.setText("" + Texto);
                 }
             }
             else if (valores[2].equals("HOTDRY_OFF")){
                 if (valores[0].equals(Integer.toString(1))) {
-                    labelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+                   labelRuimA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
                 if (valores[0].equals(Integer.toString(2))) {
-                    labelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+                    labelRuimA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
                 if (valores[0].equals(Integer.toString(3))) {
-                    labelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+                    labelRuimA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
                 if (valores[0].equals(Integer.toString(4))) {
-                    labelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+                    labelRuimA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
                 }
             }
         }
@@ -397,6 +393,8 @@ public class SecretariaSaude extends javax.swing.JFrame {
                     .addComponent(labelTempA4, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
                     .addComponent(labelRuimA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
+
+        jScrollPane1.setAutoscrolls(true);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
